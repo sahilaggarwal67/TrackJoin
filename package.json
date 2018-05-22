@@ -1,0 +1,20 @@
+{
+  "name": "TrackJoin",
+  "version": "1.0.0",
+  "description": "TrackJoin REST APIs",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev": "SET NODE_ENV=development ./index.js"
+  },
+  "dependencies": {
+    "@google-cloud/firestore": "^0.14.0",
+    "config": "^1.19.0",
+    "log4js": "^0.6.32",
+    "log4js-logstash": "^0.2.2",
+    "express": "~4.13.1",
+    "express-cors": "0.0.3",
+    "express-http-proxy": "^0.7.4",
+    "walk": "^2.3.9"
+  }
+}

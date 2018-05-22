@@ -1,0 +1,34 @@
+
+
+{
+   "logging": {
+    "appenders": [{
+      "category": "track_join",
+      "type": "file",
+      "filename": "logs/track_join.log",
+      "maxLogSize": 102400,
+      "backups": 3,
+      "alwaysIncludePattern": false
+    }, {
+      "category": "rest_proxy_log",
+      "type": "console"
+    }]
+  },
+  "database": {
+    "historyDatabase": {
+      "host": "10.105.113.129",
+      "user": "xdr", //env var: PGUSER 
+      "database": "xdr", //env var: PGDATABASE 
+      "password": "xdr", //env var: PGPASSWORD 
+      "port": 5447, //env var: PGPORT 
+      "max": 10, // max number of clients in the pool 
+      "idleTimeoutMillis": 30000, // how long a client is allowed to remain idle before being closed 
+    }
+  },
+  "server": {
+    "http": {
+      "host": "localhost",
+      "port": "30304"
+    }
+  }
+}
